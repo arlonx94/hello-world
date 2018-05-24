@@ -1,0 +1,40 @@
+let userName = 'Chris';
+
+userName ? console.log(`Hello, ${userName}!`) : console.log('Hello!');
+
+let userQuestion = 'Will I find a treasure chest containing one million USD in my kitchen tonight at 10:18PM?';
+
+console.log(`${userName} asked: ${userQuestion}`);
+
+let randomNumber = Math.floor(Math.random() * 8);
+
+let eightBall = '';
+
+switch (randomNumber) {
+  case 0:
+    eightBall = 'Really?';
+    break;
+  case 1:
+    eightBall = "No, you're not that lucky.";
+    break;
+  case 2:
+    eightBall = 'It will be in your kitchen, but thieves will break in and steal it at 10:11PM.';
+    break;
+  case 3:
+    eightBall = 'Your brother finds the treasure and gives you the 50 USD he owes you.';
+    break;
+  case 4:
+    eightBall = 'Your father finds the treasure. You inherit 250,000 USD once he dies at the age of 93.';
+    break;
+  case 5:
+    eightBall = 'You find the treasure! Your friend promptly calls you and reminds you of the 500,000 USD he leant you to fund your failing circus troop.';
+    break;
+  case 6:
+    eightBall = 'You find the treasure, but blow the whole one million USD in a year. At least you have a fancy water propelled jet pack now, right?'
+    break;
+  case 7:
+    eightBall = 'You find the treasure, invest in some promising stocks, and quickly grow your meager savings to 23,000,000,000. You are a BILLIONAIRE!'
+    break;
+}
+
+console.log(`The eight ball answered: ${eightBall}`);
